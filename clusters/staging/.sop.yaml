@@ -1,4 +1,4 @@
 creation_rules:
-  - path_regex: .*.yaml
+  - path_regex: \.yaml$
     encrypted_regex: ^(data|stringData)$
     age: age1zhwwl4kztlsqdcc4x7tvxschrr2z0625uade2vzuf0rnaeemmusq5x7ae
