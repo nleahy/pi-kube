@@ -24,7 +24,7 @@ spec:
             - containerPort: 9090
    				envFrom:
     			- secretRef:
-        			name: super-user-creds
+        	    name: super-user-creds
 
 					securityContext:
             allowPrivilegeEscalation: false
