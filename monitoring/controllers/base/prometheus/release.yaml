@@ -31,5 +31,6 @@ spec:
       ingress:
         enabled: true
         ingressClassName: traefik
+
         hosts:
           - grafana.nathanleahy.net
