@@ -34,3 +34,7 @@ spec:
 
         hosts:
           - grafana.nathanleahy.net
+        tls:
+          - secretName: grafana-tls-secret
+            hosts:
+              - grafana.nathanleahy.net
