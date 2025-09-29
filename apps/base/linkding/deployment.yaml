@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: linkding
+ name: linkding
 spec:
   replicas: 1
   selector:
@@ -13,9 +13,9 @@ spec:
         app: linkding
     spec:
       securityContext:
-#        fsGroup: 33
-        runAsUser: 1000
-        runAsGroup: 1000
+        fsGroup: 33
+        runAsUser: 33
+        runAsGroup: 33
 
       containers:
         - name: linkding
