@@ -21,8 +21,8 @@ spec:
         - name: audiobookshelf
           image: advplyr/audiobookshelf:latest
           ports:
-            - containerPort: 3005
-
+#            - containerPort: 3005
+            - containerPort: 13378
           securityContext:
             allowPrivilegeEscalation: false
 
