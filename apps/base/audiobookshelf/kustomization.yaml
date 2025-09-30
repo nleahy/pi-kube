@@ -3,9 +3,6 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - deployment.yaml
-  - audiobooks-pvc.yaml
-  - podcasts-pvc.yaml
-  - config-pvc.yaml
-  - metadata-pvc.yaml
   - configmap.yaml
   - service.yaml
+  - storage.yaml
