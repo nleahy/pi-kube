@@ -65,6 +65,8 @@ metadata:
   name: cloudflared
 data:
   config.yaml:
+    # Name of the tunnel you want to run
+    
     tunnel: audiobookshelf
 
     credentials-file: /etc/cloudflared/creds/credentials.json
@@ -74,7 +76,7 @@ data:
     no-autoupdate: true
 
     ingress:
-    - hostname: audiobooks.nathanleahy.net
+    - hostname: audiobookshelf.nathanleahy.net
       service: http://audiobookshelf:3005
 
     # This rule sends traffic to the built-in hello-world HTTP server. This can help debug connectivity
@@ -84,4 +86,3 @@ data:
       service: hello_world
     # This rule matches any traffic which didn't match a previous rule, and responds with HTTP 404.
     - service: http_status:404
-
