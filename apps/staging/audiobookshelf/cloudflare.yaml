@@ -42,10 +42,18 @@ spec:
         - name: creds
           mountPath: /etc/cloudflared/creds
           readOnly: true
+        - name: certs
+          mountPath: /etc/cloudflared/
+          readOnly: true
       volumes:
       - name: creds
         secret:
           secretName: tunnel-credentials
+
+      volumes:
+      - name: certs
+        secret:
+          secretName: certificates
 
       # Create a config.yaml file from the ConfigMap below.
       - name: config
@@ -76,7 +84,7 @@ data:
 
     ingress:
     - hostname: audiobookshelf.nathanleahy.net
-      service: http://linkding:9090
+      service: http://audiobookshelf:3005
 
     # This rule sends traffic to the built-in hello-world HTTP server. This can help debug connectivity
     # issues. If hello.example.com resolves and tunnel.example.com does not, then the problem is

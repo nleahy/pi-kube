@@ -5,3 +5,4 @@ resources:
   - ../../base/audiobookshelf/
   - cloudflare.yaml
   - tunnel-credentials.yaml
+  - certificates.yaml
