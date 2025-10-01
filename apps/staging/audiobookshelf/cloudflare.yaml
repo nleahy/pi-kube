@@ -50,7 +50,6 @@ spec:
         secret:
           secretName: tunnel-credentials
 
-      volumes:
       - name: certs
         secret:
           secretName: certificates
